@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-cont {
+  max-width: 400px;
+}
+
+.text-box {
+  padding: 1em 2em;
+  margin: 0 1em;
+  background-color: var(--Dark-Blue);
+  height: 320px;
+  border-radius: 10px;
+  /* position: relative; */
+
+  min-width: 315px;
+  max-width: 400px;
+}
+#star {
+  background-color: var(--Medium-Grey);
+  border-radius: 50%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+}
+
+.text-box h1 {
+  margin-bottom: 0.5em;
+}
+
+.text-box p {
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+/* .hide-4 {
+  display: none;
+} */
+
+.ratings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings span {
+  padding: 7px 12px;
+  /* margin-right: 1em; */
+  background-color: var(--Medium-Grey);
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.ratings span:hover {
+  background-color: var(--Orange);
+}
+
+button {
+  color: #fff;
+  background-color: var(--Orange);
+  border: none;
+  width: 100%;
+  padding: 1em 3em;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: var(--Orange);
+}
+.thank-you {
+  padding: 30px 20px;
+  text-align: center;
+  /* position: absolute; */
+  /* top: 35%; */
+  /* margin-bottom: 50%; */
+  /* z-index: -1; */
+  height: 350px;
+  min-width: 315px;
+  max-width: 400px;
+}
+.thank-you img {
+  margin-bottom: 1em;
+}
+#or {
+  /* width: 200px; */
+  margin: 0px 3em;
+  color: var(--Orange);
+  background-color: rgb(53, 52, 52);
+  padding: 0.5em;
+  border-radius: 50px;
+}
+.thank-you h2 {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+.thank-you p {
+  color: var(--Light-Grey);
+
+  /* margin-bottom: 10px; */
+}
